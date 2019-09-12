@@ -1,0 +1,20 @@
+{
+    "manifest_version":2,
+    "name":"My exten",
+    "version":"0.01",
+    "content_scripts":[{
+        "matches":[
+            "<all_urls>"
+        ],
+        "js":["content.js"]
+    }],
+    "background":{
+        "scripts":["background.js"]
+    },
+    "permissions":["tabs","background","storage"],
+    "browser_action":{
+        "default_icon":"i.png",
+        "default_popup":"popup.html",
+        "default_title":"a pop up will come"
+    }
+}
